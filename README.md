@@ -28,3 +28,12 @@ To get the largest number with 12 digits iterate 12 times. For the first digit t
 **Solution part 1:** Solved by iterating through all position in the grid and check the eight adjacent positions to see if there are fewer than 4 rolls of paper.
 
 **Solution part 2:** Solved by introducing a set of possitions with rollpapers from grid. This allows removing roll of paper during the iterations. 
+
+## Day 5
+**Problem:** Give a list of ranges and a list of numbers. Ranges can be overlapp.
+- Part 1: count the number of numbers that are in at least one range.
+- Part 2: count the numbers in ranges instead. For example 4-10 means there is 7 numbers in this range.
+
+**Solution part 1:**: For each number iterate through the ranges and check if the number i in that range. If yet break the iteration.
+
+**Solution part 2:**: Merge ranges to eliminate the overlapp between ranges. Merging by sorting the ranges after start number of the ranges. Create a auxilary array and for each range check if it is overlapp with the last range in auxilary array. If yes add the new range from the last number of last range in auxilary array + 1 to the last number of the current range which is being proccessed to the auxilary array. Lastly, count the numbers in ranges using this formula: start - end + 1.
