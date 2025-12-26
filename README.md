@@ -20,4 +20,11 @@ source ./bin/activate
 **Solution part 2:** Solved by using the two pointers and greedy algorithm to choose the largest number in the range. 
 To get the largest number with 12 digits iterate 12 times. For the first digit the search range should be from 0 to n - 11. For the second digit the search range should be from postion of first digit + 1 to n - number of digit left to choose (which is 11) + 1. This continues until we get 12 digits number.
 
+## Day 4
+**Problem**: Given a grid with position of rollpapers marked with `@` and empty position marked with `.`. A roll of paper can be removed if it has fewer than 4 rolls of paper in the eight adjacent positions.
+- Part 1: Find how many rollpapers can be removed.
+- Part 2: Find how many rollpapers can be removed if once a rollpaper is removed the fork can access more rolls of paper which might also be able to remove.
 
+**Solution part 1:** Solved by iterating through all position in the grid and check the eight adjacent positions to see if there are fewer than 4 rolls of paper.
+
+**Solution part 2:** Solved by introducing a set of possitions with rollpapers from grid. This allows removing roll of paper during the iterations. 
