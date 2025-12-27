@@ -1,2 +1,6 @@
-*/input.txt
-*/simple.txt
+# Created by venv; see https://docs.python.org/3/library/venv.html
+bin
+lib
+share
+simple.txt
+input.txt
