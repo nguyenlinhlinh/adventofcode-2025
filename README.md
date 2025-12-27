@@ -108,4 +108,4 @@ Steps to solve it:
 
 **Problem:** given a list of shapes, a list of grid size and a list of number of shape required to fit into the grid. Find how many grid can fit all of the shapes required.
 
-**Solution:** The instruction tricks you to think that you have to test all cases where shapes are placed tightly to get all shapes fit into the region. This is NP - hard problem which cannot be solved with large input. The main point of this problem is to realize that in this case you just need to calculate if all shapes fit into region by loosely placing them next to each others.
+**Solution:** The instruction tricks you to think that you have to test all cases where shapes are placed tightly to get all shapes fit into the region. This is NP problem which cannot be solved in reasonable time with large input. The main point of this problem is to realize that in this case you just need to calculate if all shapes fit into region by loosely placing them next to each others.
