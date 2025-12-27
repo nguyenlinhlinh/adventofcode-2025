@@ -56,3 +56,12 @@ Iterate through each row and for each column add or multiply the value in the co
 **Solution part 1:** iterate through the row of the grid and every time a beam encounter a splitter count it and add the two new beams for the next iteration.
 
 **Solution part 2:** solved by using BFS and an auxilary dictionary called `endpos` to store the current number of paths that pass through a position. Since endpos collects the number of paths that the beams pass through a position it is important to update it with value from previous position to the next position. Total path is counted when a beam reaches the end position of the grid.
+
+## Day 8
+**Problem:** given a list of coordinates in 3D space. 
+- Part 1: Connect together 1000 pairs and multiply together the sizes of the three largest connected components.
+- Part 2: Connect the pairs until all of them form on connected component and multiply together x coordinates of the last two coordinates.
+
+**Solution part 1**: sort by distances and solve using union find.
+
+**Solution part 2**: sort by distances and then connect coordinates pairs using union. Every time a pair is connected, reduce the number of connected component by 1.
