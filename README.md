@@ -37,3 +37,13 @@ To get the largest number with 12 digits iterate 12 times. For the first digit t
 **Solution part 1:**: For each number iterate through the ranges and check if the number i in that range. If yet break the iteration.
 
 **Solution part 2:**: Merge ranges to eliminate the overlapp between ranges. Merging by sorting the ranges after start number of the ranges. Create a auxilary array and for each range check if it is overlapp with the last range in auxilary array. If yes add the new range from the last number of last range in auxilary array + 1 to the last number of the current range which is being proccessed to the auxilary array. Lastly, count the numbers in ranges using this formula: start - end + 1.
+
+## Day 6
+**Problem:** Given a list of problems. Each problem has a group of numbers that need to be either added or multiplied together. 
+- Part 1: find the sum of all problems.
+- Part 2: each problem is given in its own column, with the most significant digit at the top and the least significant digit at the bottom. Find the sum of all problems.
+
+**Solution part 1:** have an array called `result` with length which is the number of problems. The initial values in `result` are values of the first row of each problem.
+Iterate through each row and for each column add or multiply the value in the column with the value in `result`for that specific column.
+
+**Solution part 2:** solved by rotating the matrix storing the problems and then calculation the sum as part 1. 
