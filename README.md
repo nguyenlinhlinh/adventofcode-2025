@@ -103,3 +103,9 @@ Iterate through each row and for each column add or multiply the value in the co
 Steps to solve it:
 - Find the number of paths for each sub path for example number of path from svr to dac, dac to fft, etc
 - The number of paths visit both path is multiplication of each sub paths in 1 + multiplication of each sub path in 2 
+
+## Day 12
+
+**Problem:** given a list of shapes, a list of grid size and a list of number of shape required to fit into the grid. Find how many grid can fit all of the shapes required.
+
+**Solution:** The instruction tricks you to think that you have to test all cases where shapes are placed tightly to get all shapes fit into the region. This is NP - hard problem which cannot be solved with large input. The main point of this problem is to realize that in this case you just need to calculate if all shapes fit into region by loosely placing them next to each others.
