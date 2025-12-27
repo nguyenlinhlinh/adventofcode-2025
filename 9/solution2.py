@@ -1,8 +1,3 @@
-# Solved by checking that all the edges are in side the polygon created by red tiles
-# 1. Garther all the x ranges and y ranges that have red tiles
-# 2. Iterate through coordinates pairs of red tiles and check that all 4 edges created by the pair is in side the polygon
-# This mean for example pair (x1, y1) and (x2, y2) check x range from x1 - x2 where y1 - y2 and check y range y1 - y2 where x1 - x2
- 
 import sys
 
 def getInput(f):
