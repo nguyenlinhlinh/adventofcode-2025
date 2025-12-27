@@ -47,3 +47,12 @@ To get the largest number with 12 digits iterate 12 times. For the first digit t
 Iterate through each row and for each column add or multiply the value in the column with the value in `result`for that specific column.
 
 **Solution part 2:** solved by rotating the matrix storing the problems and then calculation the sum as part 1. 
+
+## Day 7
+**Problem:** Given a grid with start position of the beam on top the grid. The beam moves downward on the grid. If the beam encounters a splitter it will be stopped and splitted into 2 new beams one on the left and one on the right of the splitter.
+- Part 1: how many times will the beam be splitted?
+- Part 2: the split changes so that the beam will either take the right path or left path. Count how many different paths would the beam traveled.
+
+**Solution part 1:** iterate through the row of the grid and every time a beam encounter a splitter count it and add the two new beams for the next iteration.
+
+**Solution part 2:** solved by using BFS and an auxilary dictionary called `endpos` to store the current number of paths that pass through a position. Since endpos collects the number of paths that the beams pass through a position it is important to update it with value from previous position to the next position. Total path is counted when a beam reaches the end position of the grid.
