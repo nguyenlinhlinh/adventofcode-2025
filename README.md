@@ -86,3 +86,20 @@ Iterate through each row and for each column add or multiply the value in the co
 **Solution part 1:** solved by using BFS.
 
 **Solution part 2:** solved by setting up a linear equation system.
+
+## Day 11
+
+**Problem:** given a list of nodes and which nodes a node is connected to
+- Part 1: how many different paths lead from `you` to `out`
+- Part 2: how many of those paths visit both dac and fft?
+
+**Solution part 1:** solved by using DFS and store the number of paths to node in `visited` dictionary.
+
+**Solution part 2:** solved by using DFS and basic math. There are two scenarios:
+
+1. Go from svr - dac - fft - out
+2. Go from svr - fft - dac - out
+
+Steps to solve it:
+- Find the number of paths for each sub path for example number of path from svr to dac, dac to fft, etc
+- The number of paths visit both path is multiplication of each sub paths in 1 + multiplication of each sub path in 2 
