@@ -76,3 +76,13 @@ Iterate through each row and for each column add or multiply the value in the co
 **Solution part 2:** Solved by checking that all the edges are in side the polygon created by the coordinates from the list.
 1. Garther all the x ranges and y ranges from the list
 2. Iterate through coordinate pairs and check that all 4 edges created by the pair is in side the polygon. This mean for example pair (x1, y1) and (x2, y2) check x range from x1 - x2 where y1 - y2 and check y range y1 - y2 where x1 - x2.
+
+## Day 10
+**Problem:** given a list of indicators, buttons and joltages. Indicators could be on or of. Buttons is a list of buttons which if they are pressed the corresponding indicators could be turn on or off. 
+
+- Part 1: what is the fewest button presses required to correctly configure the indicators lights on all of the machines?
+- Part 2: required to correctly configure the joltage level counters on all of the machines?
+
+**Solution part 1:** solved by using BFS.
+
+**Solution part 2:** solved by setting up a linear equation system.
