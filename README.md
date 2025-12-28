@@ -6,6 +6,17 @@ activate environment
 source ./bin/activate
 ```
 ## Day 1
+**Problem:** given a list of instructions for a dial which could be turned left or right. 
+- Part 1: find the number of times the dial is left pointing at 0 after any rotation in the sequence.
+- Part 2: find the number of times the dial to point at 0 regardless of wether it happens during a rotation or at the end of one.
+
+**Solution part 1:** solved by using modulus to find the number the dial will point at after doing an instruction. Nbr = currentNbr - (number of click * (1 for right and -1 for left)) % 100.
+
+**Solution part 2:** Count the number of clicks in two cases:
+- Already at 0 then how many clicks are pointing at 0 using modulo
+- At other numbers then count how many click from this number to reach 0. 
+- When it is at 0 again just count how many times it points at 0 using modulo.
+
 ## Day 2
 **Problem:** given ranges of numbers.
 - Part 1: find all the invalid numbers which are numbers made of sequence of digits repeated twice.
