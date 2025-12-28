@@ -7,11 +7,19 @@ source ./bin/activate
 ```
 ## Day 1
 ## Day 2
-**Problem:** given ranges of numbers find all the invalid numbers which are numbers made of sequence of digits repeated twice.
+**Problem:** given ranges of numbers.
+- Part 1: find all the invalid numbers which are numbers made of sequence of digits repeated twice.
+- Part 2: find all the invalid numbers made of sequence of digits repeated at least twice.
 
-**Solution part 1:**: iterate from range start to range end and check if the number of digits are even. If number of digits is even compare the first half with the second half to see if they are the same.
+**Solution part 1:** iterate from range start to range end and check if the number of digits are even. If number of digits is even compare the first half with the second half to see if they are the same.
 
-**Solution part 2:** Comming soon...
+**Solution part 2:** the new rule makes the solution in part 1 slow. Solved this by trying to generate the numbers with repeated sequence instead iterating through number in ranges.
+
+`i` is the number to be repeated.
+`i` should be from 1 to (the number of digits in end of a range // 2).
+
+The number of repetitions is from the number of digits in start of a range to the number of digit in end of a range // `len(str(i))`.
+
 ## Day 3
 **Problem:** given a list of string of digits choose a specific number of digits from the string to get the largest possible number.
 
