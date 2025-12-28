@@ -2,5 +2,5 @@
 bin
 lib
 share
-simple.txt
+simple*.txt
 input.txt
